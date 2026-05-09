@@ -80,6 +80,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+df = pd.DataFrame()
+
 # Page configuration
 st.set_page_config(
     page_title="Amazon Product Analytics Dashboard",
@@ -88,7 +90,6 @@ st.set_page_config(
 
 # Load dataset
 @st.cache_data
-
 def load_data():
     df = pd.read_csv('data/amazon.csv')
 
@@ -136,7 +137,6 @@ def load_data():
     return df
 
 # Load cleaned data
-
 df = load_data()
 
 # Dashboard title
