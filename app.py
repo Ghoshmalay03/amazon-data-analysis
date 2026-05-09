@@ -330,4 +330,4 @@ st.markdown("---")
 st.caption("Built using Python, Pandas, Streamlit, and Plotly")
 
 if st.checkbox("Show Raw Dataset"):
-    st.dataframe(filtered_df)
+    st.dataframe(df)
